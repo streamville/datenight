@@ -1,4 +1,4 @@
 {
   "mongoURI": "ENTER_KEY_HERE",
-  "jwtSecret": "ENTER_TOKEN_SECRET"
+  "jwtSecret": "ENTER_KEY_HERE"
 }
