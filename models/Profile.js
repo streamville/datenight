@@ -12,14 +12,17 @@ const ProfileSchema = new mongoose.Schema({
   website: {
     type: String 
   },
-  genre: {
-    type: String 
+  status: {
+    type: String,
   },
   skills: {
-    type: Array 
-  
+    type: Array,
+    required: true 
   },
   location: {
+    type: String 
+  },
+  bio: {
     type: String 
   },
    experience: [
@@ -36,13 +39,12 @@ const ProfileSchema = new mongoose.Schema({
         type: String,
         required: true 
       },
-      title: {
+      to: {
         type: String,
-        to: true 
+        required: true 
       },
-      date: {
-        type: Date,
-        default: Date.now 
+      description: {
+        type: String,
       }
     }
   ],
