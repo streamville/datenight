@@ -44,9 +44,6 @@
     ]
   },
   "proxy": {
-    "/api": {
-      "target": "http://localhost:5001",
-      "secure": false
-    }
+      "target": "http://localhost:5000"
   }
 }
