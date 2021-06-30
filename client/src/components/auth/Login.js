@@ -1,5 +1,8 @@
 import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { login } from '../../actions/auth';
 
 const Login = () => {
   const [ formData, setFormData] = useState({
@@ -17,8 +20,8 @@ const Login = () => {
 
   return(
     <Fragment>
-      <h1 className="large text-primary">Log In</h1>
-      <p className="lead"><i className="fas fa-user"></i> Get Back To Your Account</p>
+      <h1 className="large text-primary">Sign In</h1>
+      <p className="lead"><i className="fas fa-user"></i> Your match is waiting.</p>
       
       <form className="form" onSubmit={e => onSubmit(e)}>
       

@@ -6,7 +6,7 @@ import { register } from '../../actions/auth';
 import PropTypes from 'prop-types';
 
 
-const Register = ({ setAlert, register }) => {
+const Register = ({ setAlert, register}) => {
   const [ formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,6 +26,7 @@ const Register = ({ setAlert, register }) => {
         register({ name, email, password });
       }
     };
+
 
   return(
     <Fragment>
@@ -50,10 +51,6 @@ const Register = ({ setAlert, register }) => {
             value={email}
             onChange={e => onChange(e)}
             />
-          <small className="form-text"
-            >This site uses Gravatar so if you want a profile image, use a
-            Gravatar email</small
-          >
         </div>
         <div className="form-group">
           <input
@@ -89,5 +86,6 @@ Register.propTypes = {
   setAlert: PropTypes.func.isRequired,
   register: PropTypes.func.isRequired
 }
+
 
 export default connect(null, { setAlert, register })(Register);
