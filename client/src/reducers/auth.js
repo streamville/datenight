@@ -4,7 +4,8 @@ import {
   USER_LOADED,
   AUTH_ERROR,
   LOGIN_FAIL,
-  LOGIN_SUCCESS
+  LOGIN_SUCCESS,
+  LOGOUT
 } from '../actions/types';
 
 const initialState = {
